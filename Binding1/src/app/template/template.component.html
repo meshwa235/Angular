@@ -1,0 +1,20 @@
+<table border="2px">
+  <tr>
+    <th>Image</th>
+    <th>Product_Name</th>
+    <th>Product_Code</th>
+    <th>Branch_Name</th>
+    <th>Branch_Code</th>
+    <th>Shipping_Address</th>
+    <th>Details</th>
+  </tr>
+  <tr *ngFor="let data of show;let n =index">
+    <td><img src = {{data.path}}></td>
+    <td>{{data.Product_Name}}</td>
+    <td>{{data.Product_Code}}</td>
+    <td>{{data.Branch_Name}}</td>
+    <td>{{data.Branch_Code}}</td>
+    <td>{{data.Shipping_Address}}</td>
+    <td><button (click) = "GetDetails(n)">Click</button></td>
+  </tr>
+</table>
