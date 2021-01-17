@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pipe</title>
+</head>
+<body>
+  {{data.title | uppercase}}<br>
+  {{data.student | number}} <br>
+  {{data.rating | number:'2.1-1'}} <br>
+  {{data.price | currency:'INR'}} <br>
+  {{data.releaseDate | date}} <br>
+  {{data.name | wrap:10}}
+</body>
+</html>
